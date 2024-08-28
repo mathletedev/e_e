@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1724805788">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="project1_demo_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="project1_demo_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="project1_demo.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="project1_demo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="project1_demo.ltx"/>
+  <File Type="RBD_FILE" Name="project1_demo.rbd"/>
+  <File Type="NPI_FILE" Name="project1_demo.npi"/>
+  <File Type="RNPI_FILE" Name="project1_demo.rnpi"/>
+  <File Type="CFI_FILE" Name="project1_demo.cfi"/>
+  <File Type="RCFI_FILE" Name="project1_demo.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="project1_demo_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="project1_demo_boot.pdi"/>
+  <File Type="RDI-RDI" Name="project1_demo.vdi"/>
+  <File Type="PDI-FILE" Name="project1_demo.pdi"/>
+  <File Type="BITSTR-MMI" Name="project1_demo.mmi"/>
+  <File Type="BITSTR-BMM" Name="project1_demo_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="project1_demo.nky"/>
+  <File Type="BITSTR-RBT" Name="project1_demo.rbt"/>
+  <File Type="BITSTR-MSK" Name="project1_demo.msk"/>
+  <File Type="BG-BIN" Name="project1_demo.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="project1_demo.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="project1_demo_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="project1_demo_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="project1_demo_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="project1_demo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="project1_demo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="project1_demo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="project1_demo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="project1_demo_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="project1_demo.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="project1_demo_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="project1_demo_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="project1_demo_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="project1_demo_bus_skew_routed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="project1_demo_utilization_placed.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="project1_demo_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-UTIL" Name="project1_demo_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="project1_demo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="project1_demo_io_placed.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="project1_demo_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-DRC" Name="project1_demo_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="project1_demo_timing_summary_pwropted.rpt"/>
+  <File Type="OPT-DRC" Name="project1_demo_drc_opted.rpt"/>
+  <File Type="PLACE-TIMING" Name="project1_demo_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="project1_demo_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="project1_demo.tcl"/>
+  <File Type="PLACE-CTRL" Name="project1_demo_control_sets_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="project1_demo_methodology_drc_routed.rpt"/>
+  <File Type="OPT-DCP" Name="project1_demo_opt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="project1_demo_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="project1_demo.hwdef"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="project1_demo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="REPORTS-TCL" Name="project1_demo_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="project1_demo_timing_summary_opted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="project1_demo_incremental_reuse_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="project1_demo_methodology_drc_routed.pb"/>
+  <File Type="PLACE-DCP" Name="project1_demo_placed.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="project1_demo_rqa_placed.pb"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="project1_demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="project1_demo_drc_routed.rpx"/>
+  <File Type="PWROPT-DCP" Name="project1_demo_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="project1_demo_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="project1_demo_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="project1_demo_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="project1_demo_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="project1_demo_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="project1_demo_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="project1_demo_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="project1_demo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="project1_demo_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="project1_demo_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="project1_demo_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="project1_demo_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="project1_demo_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="project1_demo_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="project1_demo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="project1_demo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="project1_demo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="project1_demo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="project1_demo_clock_utilization_routed.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/project1_demo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="project1_demo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/project1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
