@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module led_sw(
+module ssd(
 	input [7:0] sw,
 	input [3:0] btn,
 	output [3:0] seg_an,

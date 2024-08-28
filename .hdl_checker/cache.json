@@ -1,0 +1,362 @@
+{
+ "builder": {
+  "_version": "<undefined>",
+  "_logger": "hdl_checker.builders.fallback",
+  "_work_folder": "/home/neo/dev/e_e/.hdl_checker",
+  "_builtin_libraries": [],
+  "_added_libraries": [
+   {
+    "name": "default_library",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   }
+  ],
+  "__class__": "Fallback"
+ },
+ "config_file": [
+  {
+   "name": "/tmp/hdl_checker_project_pid10126.json",
+   "__class__": "Path"
+  },
+  1724823631.1391063,
+  "generated"
+ ],
+ "database": {
+  "sources": [
+   {
+    "path": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/requirement_2/requirement_2.srcs/sources_1/new/led_sw.v",
+     "__class__": "Path"
+    },
+    "mtime": 1724809470.7922194,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/project_1/project_1.srcs/sources_1/new/project1_demo.v",
+     "__class__": "Path"
+    },
+    "mtime": 1724806300.9087741,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/challenge1/assignment1.srcs/sources_1/new/main.v",
+     "__class__": "Path"
+    },
+    "mtime": 1724824192.1420274,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/requirement_5/assignment1.srcs/sources_1/new/ssd.v",
+     "__class__": "Path"
+    },
+    "mtime": 1724821292.3026903,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   }
+  ],
+  "inferred_libraries": [
+   {
+    "name": "/tmp/tmp0i9ct8hc.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpowm_41yz.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp27_29cy6.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpc6k4j_va.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp30htcio6.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpx8_j_ur5.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpuhj11f9t.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4tya8aso.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpie70fk3l.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpee7qs48s.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6v_ye880.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjgigufcw.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp8p9r0dw1.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpq1jz8v51.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4sniwi91.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpc_3zkysv.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp81m94_ec.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplsvns65g.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxcavda8i.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpz7i3urpq.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdlwkp01b.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpig01j1mo.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp0t4gegmm.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpje74x8q0.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp35397h7z.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpu1fabut7.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7kg1ubd8.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpec6ta8_e.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjoevv32c.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdoxwqs6w.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpgu0yac82.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpssc123zy.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp0ofvzx8p.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmphagrzlxt.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp432_5jl7.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpv7xe8hew.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpustfc2qh.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/neo/dev/e_e/214/assignments/assignment1/challenge1/assignment1.srcs/sources_1/new/main.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpptd610i0.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpfj7w1eus.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmphp6jhby2.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpz4ty9tmz.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/neo/dev/e_e/214/assignments/assignment1/requirement_5/assignment1.srcs/sources_1/new/ssd.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplomflkx2.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6yvmiz2u.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6ir8rdg7.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpyvpbtz09.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpul6_swxa.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp744c4djg.v",
+    "__class__": "Path"
+   }
+  ],
+  "design_units": [
+   {
+    "owner": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/project_1/project_1.srcs/sources_1/new/project1_demo.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "project1_demo",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      2,
+      11
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/requirement_2/requirement_2.srcs/sources_1/new/led_sw.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "led_sw",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      1,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/challenge1/assignment1.srcs/sources_1/new/main.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "main",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      1,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/neo/dev/e_e/214/assignments/assignment1/requirement_5/assignment1.srcs/sources_1/new/ssd.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ssd",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      1,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   }
+  ],
+  "__class__": "Database"
+ },
+ "__version__": "0.7.4"
+}
