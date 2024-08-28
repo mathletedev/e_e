@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/neo/dev/e_e/214/assignments/assignment1/assignment1.runs/impl_1'
+HD_PWD='/home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -39,6 +39,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .write_bitstream.begin.rst
-EAStep vivado -log project1_demo.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source project1_demo.tcl -notrace
+EAStep vivado -log led_sw.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source led_sw.tcl -notrace
 
 

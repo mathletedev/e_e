@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/neo/dev/e_e/214/assignments/assignment1/assignment1.runs/synth_1/project1_demo.tcl"
+  variable script "/home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.runs/synth_1/led_sw.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,21 +56,23 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/neo/dev/e_e/214/assignments/assignment1/assignment1.cache/wt [current_project]
-set_property parent.project_path /home/neo/dev/e_e/214/assignments/assignment1/assignment1.xpr [current_project]
+set_property webtalk.parent_dir /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.cache/wt [current_project]
+set_property parent.project_path /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/neo/dev/e_e/214/assignments/assignment1/assignment1.cache/ip [current_project]
+set_property ip_output_repo /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/neo/dev/e_e/214/assignments/assignment1/assignment1.srcs/sources_1/new/project1_demo.v
+read_verilog -library xil_defaultlib /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.srcs/sources_1/new/led_sw.v
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -80,14 +82,16 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/neo/dev/e_e/214/assignments/assignment1/assignment1.srcs/constrs_1/new/project1.xdc
-set_property used_in_implementation false [get_files /home/neo/dev/e_e/214/assignments/assignment1/assignment1.srcs/constrs_1/new/project1.xdc]
+read_xdc /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc
+set_property used_in_implementation false [get_files /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.srcs/utils_1/imports/synth_1/led_sw.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top project1_demo -part xc7z007sclg400-1
+synth_design -top led_sw -part xc7z007sclg400-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -97,10 +101,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef project1_demo.dcp
+write_checkpoint -force -noxdef led_sw.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-generate_parallel_reports -reports { "report_utilization -file project1_demo_utilization_synth.rpt -pb project1_demo_utilization_synth.pb"  } 
+generate_parallel_reports -reports { "report_utilization -file led_sw_utilization_synth.rpt -pb led_sw_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

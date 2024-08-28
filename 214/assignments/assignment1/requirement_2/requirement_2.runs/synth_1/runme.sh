@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/neo/dev/e_e/214/assignments/assignment1/assignment1.runs/synth_1'
+HD_PWD='/home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -37,4 +37,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log project1_demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source project1_demo.tcl
+EAStep vivado -log led_sw.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_sw.tcl

@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/neo/dev/e_e/214/assignments/assignment1/assignment1.runs/impl_1/project1_demo.tcl"
+  variable script "/home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.runs/impl_1/led_sw.tcl"
   variable category "vivado_impl"
 }
 
@@ -106,22 +106,23 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
-  set_param runs.launchOptions { -jobs 6  }
-  open_checkpoint project1_demo_routed.dcp
-  set_property webtalk.parent_dir /home/neo/dev/e_e/214/assignments/assignment1/assignment1.cache/wt [current_project]
-set_property TOP project1_demo [current_fileset]
+  set_param xicom.use_bs_reader 1
+  set_param runs.launchOptions { -jobs 10  }
+  open_checkpoint led_sw_routed.dcp
+  set_property webtalk.parent_dir /home/neo/dev/e_e/214/assignments/requirement_2/requirement_2.cache/wt [current_project]
+set_property TOP led_sw [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi project1_demo.mmi }
+  catch { write_mem_info -force -no_partial_mmi led_sw.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
-  write_bitstream -force project1_demo.bit 
+  write_bitstream -force led_sw.bit 
 OPTRACE "write_bitstream" END { }
 OPTRACE "write_bitstream misc" START { }
 OPTRACE "read constraints: write_bitstream_post" START { }
 OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force project1_demo}
-  catch {file copy -force project1_demo.ltx debug_nets.ltx}
+  catch {write_debug_probes -quiet -force led_sw}
+  catch {file copy -force led_sw.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
