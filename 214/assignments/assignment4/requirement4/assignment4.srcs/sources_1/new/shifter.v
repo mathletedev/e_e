@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module shifter(
+module shifter (
 	input [7:0] data,
 	input [1:0] shift,
 	input dir,
@@ -12,7 +12,8 @@ module shifter(
 reg [7:0] add;
 reg [7:0] tmp;
 
-always @ (data, shift) begin
+always @(data, shift, dir, rot, fill) begin
+	add <= 0;
 	if (dir) begin
 		if (rot)
 			add <= data >> (8 - shift);
@@ -24,7 +25,7 @@ always @ (data, shift) begin
 	else begin
 		if (rot)
 			add <= data << (8 - shift);
-		if (fill)
+		else if (fill)
 			add <= ((2 << shift) - 1) << (8 - shift); // shift 1s to the left
 
 		tmp <= data >> shift | add;
