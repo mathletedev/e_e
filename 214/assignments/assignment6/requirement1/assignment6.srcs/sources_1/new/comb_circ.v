@@ -8,9 +8,9 @@ module comb_circ(
 
 wire N1, N2, N3;
 
-assign #1 N1 = A & B;
-assign #1 N2 = ~B;
-assign #1 N3 = N2 & C;
-assign #1 X = N1 | N3;
+assign #5 N1 = A & B;
+assign #5 N2 = ~B;
+assign #5 N3 = N2 & C;
+assign #5 X = N1 | N3;
 
 endmodule

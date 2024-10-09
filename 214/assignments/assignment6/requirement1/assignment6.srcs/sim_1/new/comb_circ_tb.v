@@ -15,9 +15,9 @@ initial begin
 
 	for (k = 0; k < 4; k = k + 1) begin
 		{A, C} = k;
-		#5 B = 1;
-		#5 B = 0;
-		#5;
+		#40 B = 1;
+		#40 B = 0;
+		#40;
 	end
 end
 
