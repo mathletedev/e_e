@@ -20,13 +20,13 @@ endmodule
 module mux(
 	input [7:0] I0,
 	input [7:0] I1,
-	input sel,
+	input Sel,
 	output [7:0] O
 );
 	reg [7:0] res;
 
-	always @ (I0, I1, sel) begin
-		case (sel)
+	always @ (I0, I1, Sel) begin
+		case (Sel)
 			0: res <= I0;
 			1: res <= I1;
 		endcase
@@ -44,5 +44,5 @@ module main(
 	wire [7:0] reg_to_mux;
 
 	register r(.D(sw), .En(btn[0]), .Clk(clk), .Q(reg_to_mux));
-	mux m(.I0(sw), .I1(reg_to_mux), .sel(btn[1]), .O(led));
+	mux m(.I0(sw), .I1(reg_to_mux), .Sel(btn[1]), .O(led));
 endmodule
