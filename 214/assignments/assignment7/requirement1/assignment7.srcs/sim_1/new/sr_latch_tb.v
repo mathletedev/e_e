@@ -2,9 +2,10 @@
 
 module sr_latch_tb;
 	reg S, R;
-	wire Q, Qn;
+	wire Q, Qn, nor_Q, nor_Qn;
 
 	sr_latch sr_latch (.S(S), .R(R), .Q(Q), .Qn(Qn));
+	nor_sr_latch nor_sr_latch (.S(S), .R(R), .Q(nor_Q), .Qn(nor_Qn));
 
 	initial begin
 		S = 1;
